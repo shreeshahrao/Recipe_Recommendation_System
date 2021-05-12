@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Search Recipe</title>
+	<link href="static/css_main/bootstrap.min.css" rel="stylesheet">
+	<link href="static/css_main/style.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="static/css_main/font-awesome.min.css" />
+	<link href="static/css_main/element.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Geostar+Fill|Leckerli+One|Montez" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Russo+One" rel="stylesheet">
+	<script src="static/js_main/jquery-2.1.1.min.js"></script>
+	<script src="static/js_main/bootstrap.min.js"></script>
+	<script src="static/js_main/ekko-lightbox.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+  </head>
+<body>
+<section id="header" class="header_menu">
+	<nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand heading_tag" href="index.html" style="-webkit-text-stroke: 1.11px black;">The Solo Chef</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right" style="-webkit-text-stroke: 1.11px black;">
+                    <li>
+                        <a class="tag_menu" href="home">HOME</a>                    </li>
+
+
+
+					<li>
+                        <a class="tag_menu active_tab" href="blog">SEARCH RECIPES</a>                    </li>
+
+
+
+					<li>
+                        <a class="tag_menu" href="team">TEAM</a>                    </li>
+
+					<li>
+                        <a class="tag_menu" href="contact">CONTACT</a>                    </li>
+
+					<li class="dropdown">
+					  <a class="tag_menu" href="detail.html" data-toggle="dropdown" role="button" aria-expanded="false">MORE<span class="caret"></span></a>
+					  <ul class="dropdown-menu drop_1" role="menu">
+						<li><a href="home">Home</a></li>
+						<li><a href="logout">Logout</a></li>
+
+					  </ul>
+                    </li>
+					
+                </ul>
+				 
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+</section>
+
+<section id="header_mini">
+    <div class="container">
+	  <div class="row">
+	          <div class="header_mini clearfix">
+			      <h1><a class="heading_tag" href="index.html">The Solo Chef</a></h1>
+			  </div>
+	                <a id="menu-toggle" href="detail.html" class="btn btn-warning btn-lg toggle"><i class="fa fa-toggle-on"></i></a>
+		  
+			         <div id="sidebar-wrapper" class="">
+						  <ul class="sidebar-nav">
+							<a id="menu-close" href="detail.html" class="btn btn-default btn-lg pull-right toggle"><i class="fa fa-remove"></i></a>
+							<li class="sidebar-brand">
+							  <a class="heading_tag" href="index.html">Nutrient</a></li>
+								 <li>
+                        <a class="tag_menu" href="index.html">HOME</a>                    </li>
+                     
+                                 <li>
+                        <a class="tag_menu" href="about.html">ABOUT</a>                    </li>
+					 
+					             <li>
+                        <a class="tag_menu active_tab" href="blog.html">BLOG</a>                    </li>
+                    
+					             <li>
+                        <a class="tag_menu" href="detail.html">DETAIL</a>                    </li>
+					
+					             <li>
+                        <a class="tag_menu" href="menu.html">DISHES</a>                    </li>
+					
+					             <li>
+                        <a class="tag_menu" href="services.html">SERVICES</a>                    </li>
+						
+					              <li>
+                        <a class="tag_menu" href="team.html">TEAM</a>                    </li>
+						
+					               <li>
+                        <a class="tag_menu" href="contact.html">CONTACT</a>                    </li>
+					
+				                	<li class="dropdown">
+					  <a class="tag_menu" href="detail.html" data-toggle="dropdown" role="button" aria-expanded="false">MORE<span class="caret"></span></a>
+					  <ul class="dropdown-menu drop_1" role="menu">
+						<li><a href="detail.html">Home</a></li>
+						<li><a href="detail.html">Blogpost</a></li>
+						<li><a href="detail.html">Detail</a></li>
+					  </ul>
+                    </li>
+						  </ul>
+			         </div>
+					 
+	   </div>
+	</div>
+  </section>
+
+<section id="blog" style="background:#d9e4dd">
+  <div class="container">
+   <div class="row">
+    <div class="menu_1 clearfix text-center">
+	  <h1 style="text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black; font-family:cursive;">SEARCH RECIPES</h1>
+	</div>
+     <div>
+		 <!--Input for Recipes-->
+		 <center>
+			 <form method="POST" action="/getrecipe">
+
+				 <input type="text" id="states" name="recipenam" value="" list="states-list" placeholder="Enter Recipe Name" style="width:30%; height:30px;">
+                    <datalist id="states-list">
+                    {% for i in recipelist %}
+                    <option name="one" value="{{i}}">{{i}}</option>
+                    {% endfor %}
+                    </datalist>
+			 </br>
+				  <input type="submit" name="submit" style="background-color:  #7fff00;  border: none;  color: black; font-family:cursive; text-align: center;  text-decoration: none; font-weight:bold;  font-size: 16px; margin-right:20px;  margin-top:30px; border-radius: 12px;  width:170px;  height:40px; ">
+			 </form>
+
+		 </center>
+	 </div>
+   <div>
+	   <center>
+           <table  width="100%" style="margin-top:50px; border-collapse:collapse; box-shadow:0 5px 10px #000000; color:#4f546c; background-color:white; ">
+               <center>
+                   {% for k,j in search.items() %}
+                   <tr style=" box-shadow:0 5px 10px #7fff00; font-family:Arial; color:black; align-text:justify; ">
+                   <td style="font-size:30px; padding:1rem 2rem; text-align:center; padding:1rem 2rem; text-transform:uppercase; letter-spacing:0.1rem;font-size:12px; font-weight:bold;" width="20%">{{k}}</td>
+
+                  <td style="font-size:30px; padding:1rem 2rem; text-align:justify; padding:1rem 2rem; text-transform:uppercase; letter-spacing:0.1rem;font-size:12px; font-weight:bold; " width="60%">{{j}}</td>
+                   {% endfor %}
+                   {% for k,j in search1.items() %}
+                   <tr style=" box-shadow:0 5px 10px #7fff00; font-family:cursive; color:black; ">
+                   <td style="font-size:30px; padding:1rem 2rem; text-align:center; padding:1rem 2rem; text-transform:uppercase; letter-spacing:0.1rem;font-size:12px; font-weight:bold;" width="20%">{{k}}</td>
+
+                   <td style="font-size:30px; padding:1rem 2rem; text-align:justify; padding:1rem 2rem; text-transform:uppercase; letter-spacing:0.1rem;font-size:12px; font-weight:bold; " width="60%"><a href="{{j}}" target="_blank">{{link}}</a></td>
+                   {% endfor %}
+               </center>
+           </table>
+       </center>
+   </div>
+   </div>
+  </div>
+</section>
+
+
+
+<section id="footer" >
+ <div class="container">
+  <div class="row">
+   <div class="col-sm-12">
+     <div class="footer text-center">
+	    <p> © 2021 The Solo Chef. All Rights Reserved | Design by <a href="http://www.templateonweb.com">TemplateOnWeb</a></p>
+	 </div>
+   </div>
+  </div>
+ </div>
+</section>
+
+<script src="js/classie.js"></script>
+
+<script src="js/cbpAnimatedHeader.js"></script>
+
+<script type="text/javascript">
+	  $("#menu-close").click(function(e) {
+    e.preventDefault();
+    $("#sidebar-wrapper").toggleClass("active");
+  });
+  $("#menu-toggle").click(function(e) {
+    e.preventDefault();
+    $("#sidebar-wrapper").toggleClass("active");
+  });
+	</script>
+
+</body>
+       
+</html>

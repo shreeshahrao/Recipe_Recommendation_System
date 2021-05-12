@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>The Solo Chef</title>
+	<link href="static/css_main/bootstrap.min.css" rel="stylesheet">
+	<link href="static/css_main/style.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="static/css_main/font-awesome.min.css" />
+	<link href="static/css_main/element.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Geostar+Fill|Leckerli+One|Montez" rel="stylesheet">
+       <link rel="stylesheet" href="static/css_main/slider-def.css">
+	<link href="https://fonts.googleapis.com/css?family=Russo+One" rel="stylesheet">
+	<script src="static/js_main/jquery-2.1.1.min.js"></script>
+	<script src="static/js_main/bootstrap.min.js"></script>
+	<script src="static/js_main/ekko-lightbox.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+
+  </head>
+<body>
+<section id="header" class="header_menu">
+	<nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand heading_tag" href="home" style="-webkit-text-stroke: 1.11px black;"> The Solo Chef </a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right" style="-webkit-text-stroke: 1.11px black;">
+                            <li>
+                        <a class="tag_menu active_tab" href="home">HOME</a>                    </li>
+
+
+
+					             <li>
+                        <a class="tag_menu" href="blog">SEARCH RECIPE</a>                    </li>
+
+
+					              <li>
+                        <a class="tag_menu" href="team">TEAM</a>                    </li>
+
+					               <li>
+                        <a class="tag_menu" href="contact">CONTACT</a>                    </li>
+
+				                	<li class="dropdown">
+					  <a class="tag_menu" href="#" data-toggle="dropdown" role="button" aria-expanded="false">MORE<span class="caret"></span></a>
+					  <ul class="dropdown-menu drop_1" role="menu">
+						<li><a href="home">Home</a></li>
+						<li><a href="logout">Logout</a></li>
+					  </ul>
+                    </li>
+						  </ul>
+				 
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+</section>
+
+<section id="header_mini">
+    <div class="container">
+	  <div class="row">
+	          <div class="header_mini clearfix">
+			      <h1><a class="heading_tag" href="index.html">The Solo Chef</a></h1>
+			  </div>
+	                <a id="menu-toggle" href="#" class="btn btn-warning btn-lg toggle"><i class="fa fa-toggle-on"></i></a>
+		  
+			         <div id="sidebar-wrapper" class="">
+						  <ul class="sidebar-nav">
+							<a id="menu-close" href="#" class="btn btn-default btn-lg pull-right toggle"><i class="fa fa-remove"></i></a>
+							<li class="sidebar-brand">
+							  <a class="heading_tag" href="index.html">The Solo Chef</a></li>
+								 <li>
+                        <a class="tag_menu active_tab" href="home">HOME</a>                    </li>
+                     
+
+                        <a class="tag_menu" href="blog">SEARCH RECIPE</a>                    </li>
+                    
+
+						
+					              <li>
+                        <a class="tag_menu" href="team">TEAM</a>                    </li>
+						
+					               <li>
+                        <a class="tag_menu" href="contact">CONTACT</a>                    </li>
+					
+				                	<li class="dropdown">
+					  <a class="tag_menu" href="#" data-toggle="dropdown" role="button" aria-expanded="false">MORE<span class="caret"></span></a>
+					  <ul class="dropdown-menu drop_1" role="menu">
+						<li><a href="home">Home</a></li>
+						<li><a href="logout">Logout</a></li>
+
+					  </ul>
+                    </li>
+						  </ul>
+			         </div>
+					 
+	   </div>
+	</div>
+  </section>
+
+<section id="center">
+ <div class="center_main clearfix">
+ <div id="slider1">
+<div class="slides">
+
+<!-- First slide -->
+<div class="slider">
+<div class="legend"></div>
+<div class="content">
+<div class="content-txt">
+<h1> Your title </h1>
+<h2> Your description </h2>
+</div>
+</div>
+<div class="images">
+<img src="{{url_for('static',filename='gallery/image1.jpg')}}">
+</div>
+</div>
+
+<!-- Second slide -->
+<div class="slider">
+<div class="legend"></div>
+<div class="content">
+<div class="content-txt">
+<h1> Your title </h1>
+<h2> Your description </h2>
+</div>
+</div>
+<div class="images">
+<img src="{{url_for('static',filename='gallery/image2.jpg')}}">
+</div>
+</div>
+
+<!-- Third slide -->
+<div class="slider">
+<div class="legend"></div>
+<div class="content">
+<div class="content-txt">
+<h1> Your title </h1>
+<h2> Your description </h2>
+</div>
+</div>
+<div class="images">
+<img src="{{url_for('static',filename='gallery/image3.jpg')}}">
+</div>
+</div>
+
+<!-- Fourth slide -->
+<div class="slider">
+<div class="legend"></div>
+<div class="content">
+<div class="content-txt">
+<h1> Your title </h1>
+<h2> Your description </h2>
+</div>
+</div>
+<div class="images">
+<img src="{{url_for('static',filename='gallery/image1.jpg')}}">
+</div>
+</div>
+
+</div>
+</div>
+<center>
+     <div style="width:85%;padding-bottom:40px;">
+        <h2 style="font-family:cursive;padding-top:75px; margin-bottom:30px; font-size:40px; color: #7fff00; font-weight:bold; text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;">Enter User Available Ingredients</h2>
+        {% if message %}
+         <div class="alert alert-success">{{message}}</div>
+        {% endif %}
+        <form method="POST" action="/ingredients">
+        <div class="input-wrapper">
+
+            <div style="padding-top:50px;">
+
+
+                <input type="text" id="states" name="field[]" placeholder="Enter ingredients" value="" list="states-list" style="width:25%; height:30px;" required>
+                    <datalist id="states-list">
+                    {% for i in l %}
+                    <option name="one" value="{{i}}">{{i}}</option>
+                    {% endfor %}
+                    </datalist>
+
+                <a href="javascript:void(0);" class="add-input" title="Add input"><img style="margin-left:15px; max-width: 12%; height: auto; border-radius:25px;" src="/static/img/add.jpg"/></a>
+            </div>
+
+        </div>
+         <input type="submit" name="cmdsubmit" value="Find Your Recipe" style=" background-color: #7fff00;  border: none;  color: black;font-family:cursive; text-align: center;  text-decoration: none; font-weight:bold;  font-size: 16px; margin-right:50px;  margin-top:30px; border-radius: 12px;  width:170px;  height:40px; ">
+        </form>
+     </div>
+ <br/>
+     <div>
+      <center> <p style="font-family:cursive; margin-bottom:10px; font-size:40px; color:#7fff00; font-weight:bold; text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;">{{rec}}</p> </center><br/>
+    <table border="5px" style="width:90%; background-color: white; height:50px; border-color:white;">
+        <thead style=" box-shadow:0 5px 10px  #7fff00"> <!--style="box-shadow:0 5px 10px #000000;"-->
+          {% for i in head1 %}
+
+          <td style="font-weight:bold; font-family:cursive; font-size:35px; color: #7fff00; text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;"><center>{{i}}</center></td>
+          {% endfor %}
+
+        </thead>
+         {% for k,j in d.items() %}
+         <tr style="height:50px; box-shadow:0 5px 10px #7fff00; font-family:cursive;"border="5px">
+         <td style="font-size:30px; font-weight:bold; color:black"> <center>{{k}}</center></td> <td style="font-weight:bold; font-size:30px; color:#00008b;"><center><a href="{{j}}" target="_blank">Prepare</a></center></td>
+         </tr>
+         {% endfor %}
+             </table>
+
+     </div>
+
+
+</center>
+ </div>
+
+
+
+</center>
+ </div>
+</section>
+    <div style="background:#d9e4dd; padding-bottom:200px;padding-top:30px;">
+      <center>
+    <table border="5px" style="width:90%; background-color: white; height:50px; border-color:white;">
+        <thead style=" box-shadow:0 5px 10px #7fff00; height:20px;">
+        {% for i in head %}
+
+          <td style="font-weight:bold; font-family:cursive; font-size:35px; color:#7fff00; text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;"><center>{{i}}</center></td>
+
+          {% endfor %}
+              </thead>
+         {% for k,j in d1.items() %}
+         <tr style=" width:50%; height:50px; font-family:cursive; color:#000000;  box-shadow:0 5px 10px #7fff00"border="5px">
+         <td style=" width:40%; height:50px; padding:1rem 2rem; text-align:center; padding:1rem 2rem; text-transform:uppercase; letter-spacing:0.1rem;font-size:20px; font-weight:bold; ">
+             <center>
+                  {{k}}
+              </center>
+         </td>
+             <td style=" width:40%; height:50px; padding:1rem 2rem; text-align:justify; padding:1rem 2rem; text-transform:uppercase; letter-spacing:0.1rem;font-size:20px; font-weight:bold;"><center><p>
+                 {% for i in j %}
+                 {{i}}
+                 {{coma}}
+                 {% endfor %}
+             </p></center></td>
+         </tr>
+         {% endfor %}
+             </table>
+      </center>
+     </div>
+
+<section id="about_home">
+ <div class="about_home_main clearfix">
+  <div class="container">
+	  <div class="row">
+		   <div class="about_home text-center clearfix">
+			<h2><i class="fa fa-apple"></i></h2>
+			<h1>YOUR RECENT HISTORY</h1>
+			<h3 class="heading_tag">Wanna cook your fav dish again !? </h3>
+			<p> Here is your recent past recipe<br> </div>
+	  </div>
+ </div>
+ </div>
+</section>
+<!--
+<section id="menu_home" class="clearfix">     Recipe User History
+{% for dish,url in dishes|zip(urls) %}
+ <div class="menu_home clearfix">
+  <div class="col-sm-4 space_all">
+   <div class="menu_home_inner clearfix">
+    <div class="grid clearfix">
+					
+					<figure class="effect-duke">
+						<img src="{{url_for('static',filename='gallery/51.jpg')}}" alt="img"/>
+						<figcaption>
+							<h2>{{dish}}</span></h2>
+							<p>Curabitursodales ligula in libero.Sed dignissim lacinia nunc.</p>
+						<a href={{url}}>View more</a>						</figcaption>
+		  </figure>
+	  </div>
+   </div>
+  </div>
+{% endfor %}-->
+	 <!--
+  <div class="col-sm-4 space_all">
+   <div class="menu_home_inner clearfix">
+    <div class="grid clearfix">
+					
+					<figure class="effect-duke">
+						<img src="static/img_main/4.jpg" alt="img17"/>
+						<figcaption>
+							<h2>Foody<span>World</span></h2>
+							<p>Curabitursodales ligula in libero.Sed dignissim lacinia nunc.</p>
+						<a href="#">View more</a>						</figcaption>			
+		  </figure>
+	  </div>
+   </div>
+  </div>
+  <div class="col-sm-4 space_all">
+   <div class="menu_home_inner clearfix">
+    <div class="grid clearfix">
+					
+					<figure class="effect-duke">
+						<img src="static/img_main/5.jpg" alt="img17"/>
+						<figcaption>
+							<h2>Foody<span>World</span></h2>
+							<p>Curabitursodales ligula in libero.Sed dignissim lacinia nunc.</p>
+						<a href="#">View more</a>						</figcaption>			
+		  </figure>
+	  </div>
+   </div>
+  </div>
+   -->
+ </div>
+
+
+</section>
+
+<section id="offer_home">
+ <div class="container">
+  <div class="row">
+    <div class="about_home text-center clearfix">
+			<h2><i class="fa fa-apple"></i></h2>
+			<h1>Easy Recipe You Can Prepare</h1>
+            <h4>You Can Prepare these Recipe Easily</h4>
+		   </div>
+    <div class="offer_home  clearfix">
+	 <div class="col-sm-4">
+	  <div class="offer_home_inner text-center">
+	   <a href="#"><img class="img-rounded" src="{{url_for('static',filename='gallery/31.jpg')}}" width="100%" height="400px"></a>
+	   <h3><a href="#">SED CURSUS DAPIBUS</a></h3>
+	   <p class="heading_tag">Lorem, ipsum, dolor </p>
+
+	  </div>
+	 </div>
+	 <div class="col-sm-4">
+	  <div class="offer_home_inner text-center">
+	   <a href="#"><img class="img-rounded" src="{{url_for('static',filename='gallery/12.jpg')}}" width="100%" height="400px"></a>
+	   <h3><a href="#">IMPERDIET</a></h3>
+	   <p class="heading_tag">Dapibus, nulla, elementum </p>
+
+	  </div>
+	 </div>
+	 <div class="col-sm-4">
+	  <div class="offer_home_inner text-center">
+	   <a href="#"><img class="img-rounded" src="{{url_for('static',filename='gallery/11.jpg')}}" width="100%" height="400px"></a>
+	   <h3><a href="#">DUIS SAGITTIS IPSUM</a></h3>
+	   <p class="heading_tag">Integer, ipsum, libero </p>
+
+	  </div>
+	 </div>
+	</div>
+	<div class="offer_home_1 text-center  clearfix">
+
+	</div>
+  </div>
+ </div>
+</section>
+
+<!--<section id="dishes_home">
+ <div class="container">
+  <div class="row">
+   <div class="dishes_home clearfix">
+    <div class="col-sm-6">
+	 <div class="dishes_home_left text-center">
+	   <h2><i class="fa fa-apple"></i></h2>
+	   <h1>OUR BEST & LATEST MENUS</h1>
+	   <h3 class="heading_tag">Popular foods</h3>
+	   <p>Duis sagittis ipsum.Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla.Class aptent taciti sociosqu ad litora torquent per conubia nostra,<br> per inceptos himenaeos.</p>
+	   <h4><a href="#">ABOUT US</a></h4>
+	 </div>
+	</div>
+	<div class="col-sm-6"></div>
+   </div>
+  </div>
+ </div>
+</section>
+
+<section id="testimonial_home">
+ <div class="testimonial_home_main clearfix">
+   <div class="container">
+  <div class="row">
+   <div class="testimonial_home clearfix">
+                 <div class="testimonial_home_top clearfix text-center"><h1> TESTIMONIALS</h1></div>
+                <div class="quote clearfix"><i class="fa fa-quote-left fa-4x"></i></div>
+				<div class="carousel slide clearfix" id="fade-quote-carousel" data-ride="carousel" data-interval="3000">
+				   Carousel indicators
+                  <ol class="carousel-indicators">
+				    <li data-target="#fade-quote-carousel" data-slide-to="0" class=""></li>
+				    <li data-target="#fade-quote-carousel" data-slide-to="1" class=""></li>
+				    <li data-target="#fade-quote-carousel" data-slide-to="2" class=""></li>
+
+				  </ol>
+				   Carousel items
+				  <div class="carousel-inner">
+				    <div class="item active left">
+					     <blockquote>
+				    		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio.Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum.Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla.</p>
+				    	</blockquote>
+                        <div class="profile-circle"></div>
+						<h4 class="text-center">Elementum Imperdiet</h4>
+						<h6>Vestibulum lacinia arcu eget nulla</h6>
+				    </div>
+				    <div class="item next left">
+					    <blockquote>
+				    		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio.Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum.Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla.</p>
+							
+				    	</blockquote>
+                        <div class="profile-circle_1"></div>
+						<h4 class="text-center">Praesent Mauris</h4>
+						<h6>Vestibulum lacinia arcu eget nulla</h6>
+				    </div>
+				    <div class="item">
+					     <blockquote>
+				    		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio.Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum.Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla.</p>
+				    	</blockquote>
+                        <div class="profile-circle_2"></div>
+				    	<h4 class="text-center">Semper Porta</h4>
+						<h6>Vestibulum lacinia arcu eget nulla</h6>
+				    </div>
+ 
+				  </div>
+				</div>
+			
+   </div>
+  </div>
+ </div>
+ </div>
+ </section>-->
+
+
+ <center><h3  style="font-family:cursive; padding-top:20px; padding-bottom:40px; font-size:40px; color:#7fff00; font-weight:bold; text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;">Some more Recipes</h3></center>
+<section id="gallary" class="clearfix">
+    <div class="gallery clearfix">
+	    <article class="col-sm-3 space_all">
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    <a href="static/img_main/750/15.jpg" title="Food Portfolio" class="zoom" data-title="Food" data-footer="Food World" data-type="image" data-toggle="lightbox">
+                        <img src="{{url_for('static',filename='gallery/28.jpg')}}" alt="Nature Portfolio">
+                        <span class="overlay"></span>
+                    </a>
+                </div>
+                
+            </div>
+        </article>
+
+        <article class="col-sm-3 space_all">
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    <a href="static/img_main/750/16.jpg" title="Food Portfolio" class="zoom" data-title="Food" data-footer="Food World" data-type="image" data-toggle="lightbox">
+                        <img src="{{url_for('static',filename='gallery/20.jpg')}}" alt="Food Portfolio">
+                        <span class="overlay"></span>
+                    </a>
+                </div>
+                
+            </div>
+        </article>
+
+        <article class="col-sm-3 space_all">
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    <a href="static/img_main/750/17.jpg" title="Food Portfolio" class="zoom" data-title="Food" data-footer="Food World" data-type="image" data-toggle="lightbox">
+                        <img src="{{url_for('static',filename='gallery/30.jpg')}}" alt="Sports Portfolio">
+                        <span class="overlay"></span>
+                    </a>
+                </div>
+                
+            </div>
+        </article>
+	
+	    <article class="col-sm-3 space_all">
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    <a href="{{url_for('static',filename='gallery/31.jpg')}}" title="Food Portfolio" class="zoom" data-title="Food" data-footer="Food World" data-type="image" data-toggle="lightbox">
+                        <img src="{{url_for('static',filename='gallery/15.jpg')}}" alt="Sports Portfolio">
+                        <span class="overlay"></span>
+                    </a>
+                </div>
+                
+            </div>
+        </article>
+	</div>
+
+</section>
+<section id="gallery" class="clearfix" style="padding-bottom:20px;">
+    <div class="gallery clearfix">
+	    <article class="col-sm-3 space_all">
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    <a href="static/img_main/750/15.jpg" title="Food Portfolio" class="zoom" data-title="Food" data-footer="Food World" data-type="image" data-toggle="lightbox">
+                        <img src="{{url_for('static',filename='gallery/18.jpg')}}" alt="Nature Portfolio">
+                        <span class="overlay"></span>
+                    </a>
+                </div>
+
+            </div>
+        </article>
+
+        <article class="col-sm-3 space_all">
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    <a href="static/img_main/750/16.jpg" title="Food Portfolio" class="zoom" data-title="Food" data-footer="Food World" data-type="image" data-toggle="lightbox">
+                        <img src="{{url_for('static',filename='gallery/17.jpg')}}" alt="Food Portfolio">
+                        <span class="overlay"></span>
+                    </a>
+                </div>
+
+            </div>
+        </article>
+
+        <article class="col-sm-3 space_all">
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    <a href="static/img_main/750/17.jpg" title="Food Portfolio" class="zoom" data-title="Food" data-footer="Food World" data-type="image" data-toggle="lightbox">
+                        <img src="{{url_for('static',filename='gallery/16.jpg')}}" alt="Sports Portfolio">
+                        <span class="overlay"></span>
+                    </a>
+                </div>
+
+            </div>
+        </article>
+
+	    <article class="col-sm-3 space_all">
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    <a href="{{url_for('static',filename='gallery/43.jpg')}}" title="Food Portfolio" class="zoom" data-title="Food" data-footer="Food World" data-type="image" data-toggle="lightbox">
+                        <img src="{{url_for('static',filename='gallery/25.jpg')}}" alt="Sports Portfolio">
+                        <span class="overlay"></span>
+                    </a>
+                </div>
+
+            </div>
+        </article>
+	</div>
+
+</section>
+
+<div id="slider">
+<div class="slides">
+
+<!-- First slide -->
+<div class="slider">
+<div class="legend"></div>
+<div class="content">
+<div class="content-txt">
+<h1> Your title </h1>
+<h2> Your description </h2>
+</div>
+</div>
+<div class="images">
+<img src="{{url_for('static',filename='gallery/image1.jpg')}}">
+</div>
+</div>
+
+<!-- Second slide -->
+<div class="slider">
+<div class="legend"></div>
+<div class="content">
+<div class="content-txt">
+<h1> Your title </h1>
+<h2> Your description </h2>
+</div>
+</div>
+<div class="images">
+<img src="{{url_for('static',filename='gallery/image2.jpg')}}">
+</div>
+</div>
+
+<!-- Third slide -->
+<div class="slider">
+<div class="legend"></div>
+<div class="content">
+<div class="content-txt">
+<h1> Your title </h1>
+<h2> Your description </h2>
+</div>
+</div>
+<div class="images">
+<img src="{{url_for('static',filename='gallery/image3.jpg')}}">
+</div>
+</div>
+
+<!-- Fourth slide -->
+<div class="slider">
+<div class="legend"></div>
+<div class="content">
+<div class="content-txt">
+<h1> Your title </h1>
+<h2> Your description </h2>
+</div>
+</div>
+<div class="images">
+<img src="{{url_for('static',filename='gallery/image1.jpg')}}">
+</div>
+</div>
+
+</div>
+</div>
+
+
+<section id="footer">
+ <div class="container">
+  <div class="row">
+   <div class="col-sm-12">
+     <div class="footer text-center">
+	    <p> © 2013 Your Website Name. All Rights Reserved | Design by <a href="http://www.templateonweb.com">TemplateOnWeb</a></p>
+	 </div>
+   </div>
+  </div>
+ </div>
+</section>
+
+<script src="static/js_main/classie.js"></script>
+<script src="static/js_main/cbpAnimatedHeader.js"></script>
+<script type="text/javascript">
+	  $("#menu-close").click(function(e) {
+    e.preventDefault();
+    $("#sidebar-wrapper").toggleClass("active");
+  });
+  $("#menu-toggle").click(function(e) {
+    e.preventDefault();
+    $("#sidebar-wrapper").toggleClass("active");
+  });
+	</script>
+<script type="text/javascript">
+	$(document).ready(function() {              
+    $('i.glyphicon-thumbs-up, i.glyphicon-thumbs-down').click(function(){    
+        var $this = $(this),
+        c = $this.data('count');    
+        if (!c) c = 0;
+        c++;
+        $this.data('count',c);
+        $('#'+this.id+'-bs3').html(c);
+    });      
+    $(document).delegate('*[data-toggle="lightbox"]', 'click', function(event) {
+        event.preventDefault();
+        $(this).ekkoLightbox();
+    });                                        
+});
+
+
+
+	</script>
+
+<script>
+   $(document).ready(function(){
+    var max_input_fields = 10;
+    var add_input = $('.add-input');
+    var input_wrapper = $('.input-wrapper');
+     var new_input = '<div><input type="text" name="field[]" placeholder="Enter ingredients" style=" width:25%; height:30px; margin-top:10px;" value="" list="states-list" required/><datalist id="states-list">{% for i in l %}<option name="one" value="{{i}}">{{i}}</option>{% endfor %}</datalist><a href="javascript:void(0);" class="remove-input" title="Remove input" ><img style="margin-left:17px;max-width: 12%; height: auto; border-radius:25px; " src="/static/img/remove.jpg"/></a></div>';
+    var add_input_count = 1;
+    $(add_input).click(function(){
+        if(add_input_count < max_input_fields){
+            add_input_count++;
+            $(input_wrapper).append(new_input);
+        }
+    });
+    $(input_wrapper).on('click', '.remove-input', function(e){
+        e.preventDefault();
+        $(this).parent('div').remove();
+        add_input_count--;
+    });
+});
+
+
+    </script>
+
+
+</body>
+       
+</html>

@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Nutrient</title>
+	<link href="static/css_main/bootstrap.min.css" rel="stylesheet">
+	<link href="static/css_main/style.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="static/css_main/font-awesome.min.css" />
+	<link href="static/css_main/element.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Geostar+Fill|Leckerli+One|Montez" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Russo+One" rel="stylesheet">
+	<script src="static/js_main/jquery-2.1.1.min.js"></script>
+	<script src="static/js_main/bootstrap.min.js"></script>
+	<script src="static/js_main/ekko-lightbox.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+  </head>
+<body>
+<section id="header" class="header_menu">
+	<nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand heading_tag" href="index.html">Nutrient </a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a class="tag_menu" href="home">HOME</a>                    </li>
+
+                    <li>
+                        <a class="tag_menu" href="about">ABOUT</a>                    </li>
+
+					<li>
+                        <a class="tag_menu" href="blog">Blogpost</a>                    </li>
+
+					<li>
+                        <a class="tag_menu" href="detail">DETAIL</a>                    </li>
+
+					<li>
+                        <a class="tag_menu active_tab" href="menu">DISHES</a>                    </li>
+
+					<li>
+                        <a class="tag_menu" href="services">SERVICES</a>                    </li>
+
+					<li>
+                        <a class="tag_menu" href="team">TEAM</a>                    </li>
+
+					<li>
+                        <a class="tag_menu" href="contact">CONTACT</a>                    </li>
+
+					<li class="dropdown">
+					  <a class="tag_menu" href="#" data-toggle="dropdown" role="button" aria-expanded="false">MORE<span class="caret"></span></a>
+					  <ul class="dropdown-menu drop_1" role="menu">
+						<li><a href="home">Home</a></li>
+						<li><a href="logout">Logout</a></li>
+
+					  </ul>
+                    </li>
+
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+</section>
+
+<section id="header_mini">
+    <div class="container">
+	  <div class="row">
+	          <div class="header_mini clearfix">
+			      <h1><a class="heading_tag" href="index.html">Nutrient</a></h1>
+			  </div>
+	                <a id="menu-toggle" href="#" class="btn btn-warning btn-lg toggle"><i class="fa fa-toggle-on"></i></a>
+		  
+			         <div id="sidebar-wrapper" class="">
+						  <ul class="sidebar-nav">
+							<a id="menu-close" href="#" class="btn btn-default btn-lg pull-right toggle"><i class="fa fa-remove"></i></a>
+							<li class="sidebar-brand">
+							  <a class="heading_tag" href="index.html">Nutrient</a></li>
+								 <li>
+                        <a class="tag_menu" href="index.html">HOME</a>                    </li>
+                     
+                                 <li>
+                        <a class="tag_menu" href="about.html">ABOUT</a>                    </li>
+					 
+					             <li>
+                        <a class="tag_menu" href="blog.html">BLOG</a>                    </li>
+                    
+					             <li>
+                        <a class="tag_menu" href="detail.html">DETAIL</a>                    </li>
+					
+					             <li>
+                        <a class="tag_menu active_tab" href="menu.html">DISHES</a>                    </li>
+					
+					             <li>
+                        <a class="tag_menu" href="services.html">SERVICES</a>                    </li>
+						
+					              <li>
+                        <a class="tag_menu" href="team.html">TEAM</a>                    </li>
+						
+					               <li>
+                        <a class="tag_menu" href="contact.html">CONTACT</a>                    </li>
+					
+				                	<li class="dropdown">
+					  <a class="tag_menu" href="#" data-toggle="dropdown" role="button" aria-expanded="false">MORE<span class="caret"></span></a>
+					  <ul class="dropdown-menu drop_1" role="menu">
+						<li><a href="#">Home</a></li>
+						<li><a href="#">Blogpost</a></li>
+						<li><a href="#">Detail</a></li>
+					  </ul>
+                    </li>
+						  </ul>
+			         </div>
+					 
+	   </div>
+	</div>
+  </section>
+
+<section id="menu" class="clearfix">
+	<div class="menu_1 clearfix text-center">
+	  <h1>Dishes</h1>
+	</div>
+	<div class="menu_2 clearfix">
+    <div class="col-sm-6 space_all">
+	 <div class="menu_2_left">
+	  <img src="{{url_for('static',filename='gallery/16.jpg')}}" width="100%" height="600px">
+	 </div>
+	</div>
+	<div class="col-sm-6 space_all">
+	 <div class="menu_2_right clearfix">
+	  <h1><a href="#">Breakfast</a></h1>
+	  <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio.Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum.Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla!</p>
+
+	 </div>
+	</div>
+   </div>
+    <div class="menu_2 clearfix">
+	<div class="col-sm-6 space_all">
+	 <div class="menu_2_right clearfix">
+	  <h1><a href="#">Lunch</a></h1>
+	  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio.Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum.Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla!</p>
+
+	 </div>
+	</div>
+	<div class="col-sm-6 space_all">
+	 <div class="menu_2_left">
+	  <img src="{{url_for('static',filename='gallery/15.jpg')}}" width="100%" height="600px">
+	 </div>
+	</div>
+   </div>
+    <div class="menu_2 clearfix">
+    <div class="col-sm-6 space_all">
+	 <div class="menu_2_left">
+	  <img src="{{url_for('static',filename='gallery/19.jpg')}}" width="100%" height="600px">
+	 </div>
+	</div>
+	<div class="col-sm-6 space_all">
+	 <div class="menu_2_right clearfix">
+	  <h1><a href="#">Tea</a></h1>
+	  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio.Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum.Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla!</p>
+
+	 </div>
+	</div>
+   </div>
+    <div class="menu_2 clearfix">
+	<div class="col-sm-6 space_all">
+	 <div class="menu_2_right clearfix">
+	  <h1><a href="#">Dinner</a></h1>
+	  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio.Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum.Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla!</p>
+	  <h4><a href="#">BEST DISHES</a></h4>
+	 </div>
+	</div>
+	<div class="col-sm-6 space_all">
+	 <div class="menu_2_left">
+	  <img src="{{url_for('static',filename='gallery/20.jpg')}}" width="100%" height="600px">
+	 </div>
+	</div>
+   </div>
+
+</section>
+
+
+
+
+<section id="footer">
+ <div class="container">
+  <div class="row">
+   <div class="col-sm-12">
+     <div class="footer text-center">
+	    <p> © 2013 Your Website Name. All Rights Reserved | Design by <a href="http://www.templateonweb.com">TemplateOnWeb</a></p>
+	 </div>
+   </div>
+  </div>
+ </div>
+</section>
+
+<script src="js/classie.js"></script>
+
+<script src="js/cbpAnimatedHeader.js"></script>
+
+<script type="text/javascript">
+	  $("#menu-close").click(function(e) {
+    e.preventDefault();
+    $("#sidebar-wrapper").toggleClass("active");
+  });
+  $("#menu-toggle").click(function(e) {
+    e.preventDefault();
+    $("#sidebar-wrapper").toggleClass("active");
+  });
+	</script>
+
+</body>
+       
+</html>

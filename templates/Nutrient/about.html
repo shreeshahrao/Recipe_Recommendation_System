@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Nutrient</title>
+	<link href="static/css_main/bootstrap.min.css" rel="stylesheet">
+	<link href="static/css_main/style.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="static/css_main/font-awesome.min.css" />
+	<link href="static/css_main/element.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Geostar+Fill|Leckerli+One|Montez" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Russo+One" rel="stylesheet">
+	<script src="static/js_main/jquery-2.1.1.min.js"></script>
+	<script src="static/js_main/bootstrap.min.js"></script>
+	<script src="static/js_main/ekko-lightbox.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+  </head>
+<body>
+<section id="header" class="header_menu">
+	<nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand heading_tag" href="index.html">The solo chef </a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a class="tag_menu" href="home">HOME</a>                    </li>
+
+                    <li>
+                        <a class="tag_menu active_tab" href="about">ABOUT</a>                    </li>
+
+					<li>
+                        <a class="tag_menu" href="blog">BLOG</a>                    </li>
+
+					<li>
+                        <a class="tag_menu" href="detail">DETAIL</a>                    </li>
+
+					<li>
+                        <a class="tag_menu" href="menu">DISHES</a>                    </li>
+
+					<li>
+                        <a class="tag_menu" href="services">SERVICES</a>                    </li>
+
+					<li>
+                        <a class="tag_menu" href="team">TEAM</a>                    </li>
+
+					<li>
+                        <a class="tag_menu" href="contact">CONTACT</a>                    </li>
+
+					<li class="dropdown">
+					  <a class="tag_menu" href="#" data-toggle="dropdown" role="button" aria-expanded="false">MORE<span class="caret"></span></a>
+					  <ul class="dropdown-menu drop_1" role="menu">
+						<li><a href="home">Home</a></li>
+						<li><a href="logout">Logout</a></li>
+
+					  </ul>
+                    </li>
+					
+                </ul>
+				 
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+</section>
+
+<section id="header_mini">
+    <div class="container">
+	  <div class="row">
+	          <div class="header_mini clearfix">
+			      <h1><a class="heading_tag" href="index.html">Nutrient</a></h1>
+			  </div>
+	                <a id="menu-toggle" href="#" class="btn btn-warning btn-lg toggle"><i class="fa fa-toggle-on"></i></a>
+		  
+			         <div id="sidebar-wrapper" class="">
+						  <ul class="sidebar-nav">
+							<a id="menu-close" href="#" class="btn btn-default btn-lg pull-right toggle"><i class="fa fa-remove"></i></a>
+							<li class="sidebar-brand">
+							  <a class="heading_tag" href="index.html">Nutrient</a></li>
+								 <li>
+                        <a class="tag_menu" href="index.html">HOME</a>                    </li>
+                     
+                                 <li>
+                        <a class="tag_menu active_tab" href="about.html">ABOUT</a>                    </li>
+					 
+					             <li>
+                        <a class="tag_menu" href="blog.html">BLOG</a>                    </li>
+                    
+					             <li>
+                        <a class="tag_menu" href="detail.html">DETAIL</a>                    </li>
+					
+					             <li>
+                        <a class="tag_menu" href="menu.html">DISHES</a>                    </li>
+					
+					             <li>
+                        <a class="tag_menu" href="services.html">SERVICES</a>                    </li>
+						
+					              <li>
+                        <a class="tag_menu" href="team.html">TEAM</a>                    </li>
+						
+					               <li>
+                        <a class="tag_menu" href="contact.html">CONTACT</a>                    </li>
+					
+				                	<li class="dropdown">
+					  <a class="tag_menu" href="#" data-toggle="dropdown" role="button" aria-expanded="false">MORE<span class="caret"></span></a>
+					  <ul class="dropdown-menu drop_1" role="menu">
+						<li><a href="#">Home</a></li>
+						<li><a href="#">Blogpost</a></li>
+						<li><a href="#">Detail</a></li>
+					  </ul>
+                    </li>
+						  </ul>
+			         </div>
+					 
+	   </div>
+	</div>
+  </section>
+
+<section id="about">
+    <div class="menu_1 clearfix text-center">
+	  <h1>About Us</h1>
+	</div>
+     <div class="menu_2 clearfix">
+    <div class="col-sm-6 space_all">
+	 <div class="menu_2_left">
+	  <img src="{{url_for('static',filename='images/bg-01.jpg')}}" width="100%" height="600px">
+	 </div>
+	</div>
+	<div class="col-sm-6 space_all">
+	 <div class="menu_2_right about_menu_right clearfix">
+	  <h1><a href="#">Lorem ipsum dolor</a></h1>
+	  <h2 class="heading_tag">Nulla quis sem at <br>nibh elementum<br> imperdiet.</h2>
+	  <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio.Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum.Praesent mauris.<br> Fusce nec tellus sed augue semper porta.<br> Mauris massa.</p>
+	 </div>
+	</div>
+   </div>
+</section>
+
+<section id="about_middle">
+ <div class="container">
+  <div class="row">
+   <div class="about_middle clearfix text-center">
+    <h1>Our Best Cooking Food</h1>
+   </div>
+   <div class="about_middle_1 clearfix">
+    <div class="col-sm-4">
+	 <div class="about_middle_1_inner clearfix">
+	  <h3>Fast foods</h3>
+	<p> Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitursodales ligula in libero.Sed dignissim lacinia nunc.</p>
+	 </div>
+	</div>
+	<div class="col-sm-4">
+	 <div class="about_middle_1_inner clearfix">
+	  <h3>Burgers</h3>
+	<p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitursodales ligula in libero.Sed dignissim lacinia nunc.</p>
+	 </div>
+	</div>
+	<div class="col-sm-4">
+	 <div class="about_middle_1_inner clearfix">
+	  <h3>Dosa</h3>
+	<p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitursodales ligula in libero.Sed dignissim lacinia nunc.</p>
+	 </div>
+	</div>
+   </div>
+  </div>
+ </div>
+</section>
+
+<section id="about_home" class="about_home_page">
+ <div class="about_home_main clearfix">
+  <div class="container">
+	  <div class="row">
+		   <div class="about_home text-center clearfix">
+			<h1>Meet Our Team!</h1>
+			<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio.Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum.<br>Praesent mauris.</p>
+			<h4><a href="#">OUR TEAM</a></h4>
+		   </div>
+	  </div>
+ </div>
+ </div>
+</section>
+
+<section id="testimonial_home" class="testimonial_home_page">
+ <div class="testimonial_home_main clearfix">
+   <div class="container">
+  <div class="row">
+   <div class="testimonial_home clearfix">
+                 <div class="testimonial_home_top clearfix text-center"><h1>TESTIMONIALS</h1></div>
+                <div class="quote clearfix"><i class="fa fa-quote-left fa-4x"></i></div>
+				<div class="carousel slide clearfix" id="fade-quote-carousel" data-ride="carousel" data-interval="3000">
+				  <!-- Carousel indicators -->
+                  <ol class="carousel-indicators">
+				    <li data-target="#fade-quote-carousel" data-slide-to="0" class=""></li>
+				    <li data-target="#fade-quote-carousel" data-slide-to="1" class="active"></li>
+				    <li data-target="#fade-quote-carousel" data-slide-to="2" class=""></li>
+
+				  </ol>
+				  <!-- Carousel items -->
+				  <div class="carousel-inner">
+				    <div class="item">
+					     <blockquote>
+				    		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio.Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum.Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla.</p>
+				    	</blockquote>
+                        <div class="profile-circle"></div>
+						<h4 class="text-center">Elementum Imperdiet</h4>
+						<h6>Vestibulum lacinia arcu eget nulla</h6>
+				    </div>
+				    <div class="item active">
+					    <blockquote>
+				    		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio.Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum.Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla.</p>
+							
+				    	</blockquote>
+                        <div class="profile-circle_1"></div>
+						<h4 class="text-center">Praesent Mauris</h4>
+						<h6>Vestibulum lacinia arcu eget nulla</h6>
+				    </div>
+				    <div class="item">
+					     <blockquote>
+				    		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio.Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum.Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla.</p>
+				    	</blockquote>
+                        <div class="profile-circle_2"></div>
+				    	<h4 class="text-center">Semper Porta</h4>
+						<h6>Vestibulum lacinia arcu eget nulla</h6>
+				    </div>
+ 
+				  </div>
+				</div>
+			
+   </div>
+  </div>
+ </div>
+ </div>
+</section>
+
+
+
+<section id="footer">
+ <div class="container">
+  <div class="row">
+   <div class="col-sm-12">
+     <div class="footer text-center">
+	    <p> © 2013 Your Website Name. All Rights Reserved | Design by <a href="http://www.templateonweb.com">TemplateOnWeb</a></p>
+	 </div>
+   </div>
+  </div>
+ </div>
+</section>
+
+<script src="js/classie.js"></script>
+
+<script src="js/cbpAnimatedHeader.js"></script>
+
+<script type="text/javascript">
+	  $("#menu-close").click(function(e) {
+    e.preventDefault();
+    $("#sidebar-wrapper").toggleClass("active");
+  });
+  $("#menu-toggle").click(function(e) {
+    e.preventDefault();
+    $("#sidebar-wrapper").toggleClass("active");
+  });
+	</script>
+
+</body>
+       
+</html>
