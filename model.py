@@ -6,7 +6,7 @@ import pandas as pd
 def history(usr):
   recipe_book = pd.read_excel('recipe_dataset.xlsx')
   user_info = pd.read_excel('user_info.xlsx')
-  dishes_index = [int(user_info[user_info['user'] == usr].iloc[:, i].values) for i in range(4, 9)]
+  dishes_index = [int(user_info[user_info['user'] == usr].iloc[:, i].values) for i in range(4, 7)]
   dishes = [recipe_book.iloc[i,:] for i in dishes_index]
   return dishes
 

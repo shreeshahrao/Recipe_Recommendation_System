@@ -29,13 +29,19 @@ def present_user():
         return render_template('register/index.html')
     values  = [x for x in request.form.values()]
     usr,psd = values[0],values[1]
-    dishes = md.history(usr = usr)
-    dishes_name = [x.TranslatedRecipeName for x in dishes]
-    dishes_url = [x.URL for x in dishes]
     l = display_ingredients()
+    #print(str(user_info[ (user_info['user']== usr) ]['password'].iloc[0]),str(psd))
+    #print(usr in list(user_info['user']))
+    if usr in list(user_info['user']):
+        print('1')
+        if (str(user_info[ (user_info['user']== usr) ]['password'].iloc[0])==str(psd)):
+            dishes = md.history(usr=usr)
+            dishes_name = [x.TranslatedRecipeName for x in dishes]
+            dishes_url = [x.URL for x in dishes]
+            return render_template('Nutrient/index.html',name = 'hello '+ usr,dishes = dishes_name,urls= dishes_url, l=l,d=d,d1=d1)
+        else:
+            return render_template('Login_v3/index.html')
 
-    if (str(user_info[ (user_info['user']== usr) ].password.loc[0])==str(psd)):
-        return render_template('Nutrient/index.html',name = 'hello '+ usr,dishes = dishes_name,urls= dishes_url, l=l,d=d,d1=d1)
     else:
         return render_template('register/index.html')
 
@@ -56,7 +62,7 @@ def new_user():
     #user_info[name] = values[1:3]
     l = display_ingredients()
 
-    user_info.to_excel('user_info.xlsx')
+    user_info.to_excel('user_info.xlsx',index = False)
     return render_template('Nutrient/index.html',name = 'hello '+name,dishes = ["Gobi Manchuri","Jeera Rice"],l=l,d=d,d1=d1)
 
 
