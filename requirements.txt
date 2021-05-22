@@ -1,4 +1,6 @@
 pip==19.2.3
+--find-links https://download.pytorch.org/whl/torch_stable.html
+torch==1.2.0+cpu
 setuptools==40.8.0
 wheel==0.33.6
 certifi==2020.12.5
@@ -15,4 +17,3 @@ openpyxl==3.0.7
 matplotlib==3.4.0
 xlrd==2.0.1
 jsonify==0.5
-
