@@ -30,8 +30,6 @@ def present_user():
     values  = [x for x in request.form.values()]
     usr,psd = values[0],values[1]
     l = display_ingredients()
-    #print(str(user_info[ (user_info['user']== usr) ]['password'].iloc[0]),str(psd))
-    #print(usr in list(user_info['user']))
     if usr in list(user_info['user']):
         print('1')
         if (str(user_info[ (user_info['user']== usr) ]['password'].iloc[0])==str(psd)):
@@ -192,4 +190,4 @@ def logout():
     return render_template('Login_v3/index.html')
 
 if __name__== '__main__':
-    app.run(debug=True)
+    app.run(debug=True,host = "0.0.0.0" ,port =5000)
